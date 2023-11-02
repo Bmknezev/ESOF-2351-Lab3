@@ -1,7 +1,6 @@
 import java.util.Random;
+import engi3255.sort.*;
 
-// Press Shift twice to open the Search Everywhere dialog and type `show whitespaces`,
-// then press Enter. You can now see whitespace characters in your code.
 public class Main {
     public static void main(String[] args) {
 
@@ -14,6 +13,7 @@ public class Main {
 
         BubbleSort bubble = new BubbleSort();
         SelectionSort select = new SelectionSort();
+        CocktailSort cocktail = new CocktailSort();
 
         bubble.sort(arr);
         System.out.println(bubble.getCompares());
@@ -21,6 +21,8 @@ public class Main {
         select.sort(arr);
         System.out.println(select.getCompares());
 
+        cocktail.sort(arr);
+        System.out.println(cocktail.getCompares());
 
     }
 }
