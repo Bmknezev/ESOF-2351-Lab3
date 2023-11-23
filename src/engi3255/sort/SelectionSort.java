@@ -4,6 +4,7 @@ public class SelectionSort implements Sort {
 
     @Override
     public void sort(Comparable[] a) {
+        numComparisons = 0;
         if (a == null) {
             throw new IllegalArgumentException("Cannot sort null");
         }
@@ -14,7 +15,7 @@ public class SelectionSort implements Sort {
 
             // Find the index of the minimum element in the unsorted part of the array
             for (int j = i + 1; j < n; j++) {
-                if (a[j].compareTo(a[minIndex]) > 0) {
+                if (a[j].compareTo(a[minIndex]) < 0) {
                     minIndex = j;
                 }
                 numComparisons++;

@@ -8,6 +8,7 @@ public class BubbleSort implements Sort {
      */
     public void sort( Comparable [ ] a ) throws IllegalArgumentException
     {
+        numComparisons = 0;
         if (a == null) {
             throw new IllegalArgumentException("Cannot sort null");
         }

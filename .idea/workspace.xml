@@ -4,16 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="87ea2ee9-4225-46e4-9e11-ad2042c343bc" name="Changes" comment="added more">
-      <change afterPath="$PROJECT_DIR$/src/engi3255/sort/CocktailSort.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/engi3255/sort/QuickSort.java" afterDir="false" />
+    <list default="true" id="87ea2ee9-4225-46e4-9e11-ad2042c343bc" name="Changes" comment="added quicksort">
+      <change afterPath="$PROJECT_DIR$/src/TestDriver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/engi3255/sort/Analyzer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/engi3255/sort/AnalyzerImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/engi3255/sort/Array.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/engi3255/sort/QuickSortStd.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/BubbleSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/engi3255/sort/BubbleSort.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/HeapSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/engi3255/sort/HeapSort.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/InsertionSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/engi3255/sort/InsertionSort.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SelectionSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/engi3255/sort/SelectionSort.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Sort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/engi3255/sort/Sort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/engi3255/sort/BubbleSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/engi3255/sort/BubbleSort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/engi3255/sort/CocktailSort.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/engi3255/sort/HeapSort.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/engi3255/sort/InsertionSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/engi3255/sort/InsertionSort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/engi3255/sort/QuickSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/engi3255/sort/QuickSort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/engi3255/sort/SelectionSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/engi3255/sort/SelectionSort.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,6 +29,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -39,23 +45,34 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "create.test.in.the.same.root": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "/Users/braydon/Library/Mobile Documents/com~apple~CloudDocs/Developer/Java/ESOF-3251 lab 4",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/engi3255/sort" />
       <recent name="$PROJECT_DIR$/src" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -76,7 +93,17 @@
       <workItem from="1698690666955" duration="38000" />
       <workItem from="1698695157519" duration="294000" />
       <workItem from="1698777541112" duration="17000" />
-      <workItem from="1698950507937" duration="683000" />
+      <workItem from="1698950507937" duration="4130000" />
+      <workItem from="1699199384435" duration="10000" />
+      <workItem from="1699374131002" duration="4623000" />
+      <workItem from="1699390020387" duration="91000" />
+      <workItem from="1700151534056" duration="750000" />
+      <workItem from="1700159286986" duration="202000" />
+      <workItem from="1700159522340" duration="34000" />
+      <workItem from="1700160098436" duration="5000" />
+      <workItem from="1700163826991" duration="97000" />
+      <workItem from="1700164050564" duration="3974000" />
+      <workItem from="1700765548892" duration="552000" />
     </task>
     <task id="LOCAL-00001" summary="added more">
       <option name="closed" value="true" />
@@ -86,7 +113,15 @@
       <option name="project" value="LOCAL" />
       <updated>1698675082774</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="added quicksort">
+      <option name="closed" value="true" />
+      <created>1698951211357</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1698951211357</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -111,7 +146,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="added more" />
-    <option name="LAST_COMMIT_MESSAGE" value="added more" />
+    <MESSAGE value="added quicksort" />
+    <option name="LAST_COMMIT_MESSAGE" value="added quicksort" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
